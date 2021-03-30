@@ -5,20 +5,20 @@ function calc(operation, num1, num2) {
   function sum (num1, num2) {
     return num1 + num2;
   }
-  function subtract(num1, num2) {
+  function difference(num1, num2) {
     return num1 - num2;
   }
-  function multiply(num1, num2) {
+  function product(num1, num2) {
     return num1 * num2;
   }
-  function divide(num1, num2) {
+  function quotient(num1, num2) {
     return num1 / num2;
   }
   switch(operation){
     case 'add': return sum(num1, num2);
-    case 'difference': return difference(num1, num2);
-    case 'product': return product(num1, num2);
-    case 'quotient': return quotient(num1, num2);
+    case 'subtract': return difference(num1, num2);
+    case 'multiply': return product(num1, num2);
+    case 'divide': return quotient(num1, num2);
     default: return "Operation not supported";
   }
 }
@@ -37,7 +37,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return the correct difference when the user provides: 'subtract', 20, 10.
-
+  var result = calc('subtract', 20, 10);
+  if (result !== 10) throw new Error('Expected calc("subtract", 20, 10) to be 10. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
