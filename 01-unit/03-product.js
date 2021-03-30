@@ -33,7 +33,7 @@ try {
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
   var result = product(2, undefined);
-  if (result !== 2) throw new Error('Expected product(2) to be 2. Received: ' + result);
+  if (result !== 2) throw new Error('Expected product(2, undefined) to be 2. Received: ' + result);
   // --------------------------------------------------
   // Test Case 5
   // --------------------------------------------------
