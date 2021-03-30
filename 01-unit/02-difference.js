@@ -26,7 +26,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
-
+  var result = difference(5, null);
+  if (result !== 5) throw new Error('Expected difference(5, 0) to be 5. Received: ' + result);
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
