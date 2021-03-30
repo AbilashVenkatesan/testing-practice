@@ -1,10 +1,27 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function calc() {
-
+function calc(operation, num1, num2) {
+  function sum (num1, num2) {
+    return num1 + num2;
+  }
+  function subtract(num1, num2) {
+    return num1 - num2;
+  }
+  function multiply(num1, num2) {
+    return num1 * num2;
+  }
+  function divide(num1, num2) {
+    return num1 / num2;
+  }
+  switch(operation){
+    case 'add': return sum(num1, num2);
+    case 'difference': return difference(num1, num2);
+    case 'product': return product(num1, num2);
+    case 'quotient': return quotient(num1, num2);
+    default: return "Operation not supported";
+  }
 }
-
 // ==================================================
 // DEFINE AND EXECUTE TEST CASES
 // ==================================================
