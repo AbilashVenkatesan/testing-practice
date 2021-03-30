@@ -20,7 +20,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should ignore additional numbers.
-
+  var result = sum(1,2,3,4);
+  if (result !==3) throw new Error('Expected sum(1, 2) to be 3. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
